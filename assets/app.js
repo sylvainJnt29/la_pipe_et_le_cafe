@@ -19,8 +19,15 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
 // Test de fonctionnement gsap
 gsap.fromTo("#testTransition",{autoAlpha: 0}, {autoAlpha:1,duration:4});
-gsap.fromTo("#testTransition2",{
+gsap.fromTo("#blocEntrantGauche",{
     x:-3000
+},{
+    x:0,
+    duration:4
+    }
+);
+gsap.fromTo("#blocEntrantDroite",{
+    x:3000
 },{
     x:0,
     duration:4
