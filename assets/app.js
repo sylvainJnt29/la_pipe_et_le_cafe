@@ -16,3 +16,13 @@ import { gsap } from "gsap";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
+
+// Test de fonctionnement gsap
+gsap.fromTo("#testTransition",{autoAlpha: 0}, {autoAlpha:1,duration:4});
+gsap.fromTo("#testTransition2",{
+    x:-3000
+},{
+    x:0,
+    duration:4
+    }
+);
