@@ -27,9 +27,10 @@ body {
 }
 /* Mise en place écritures intro */
 #textePipeIntro{
-    color: blue;
+    color: #3c2213;
     position: absolute;
     font-size: 150px;
+    font-family: 'Dancing Script', cursive;
 }
 #texteOuIntro{
     color: white;
@@ -37,9 +38,10 @@ body {
     display: none;
 }
 #texteCafeIntro{
-    color: red;
+    color: #aa7b4f;
     position: relative;
     font-size: 150px;
     position: absolute;
+    font-family: 'Festive', cursive;
 }
 /* Fin mise en place écritures intro */

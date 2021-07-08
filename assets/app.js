@@ -55,7 +55,7 @@ gsap.fromTo("#texteCafeIntro",{
     y:2000
 },{
     x:1300,
-    y:750,
+    y:700,
     duration:3
     }
 );

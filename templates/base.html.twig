@@ -5,6 +5,11 @@
         <title>{% block title %}{% endblock %}</title>
 
         {% block stylesheets %}
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">  
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
