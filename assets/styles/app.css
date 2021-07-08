@@ -5,22 +5,41 @@ body {
     padding: 0;
 }
 #containerIntro{
-    background-color: white;
     width: fill;
     height: 100vh;
     display: flex;
     place-content: space-between;
-    /* background-image: url("./public/images/tasse-centrale.png"); */
+    background:url("/public/images/tasse-centrale.png")no-repeat center center fixed;
+    background-size: 60%;
+    overflow-x: hidden;
 }
 #blocEntrantGauche{
     width: 40%;
     height: fill;
-    background-color: blue;
-    border: 1px solid black;
+    background:url("/public/images/pipe-gauche.png")no-repeat center center fixed;
+    background-size: 100%;
 }
 #blocEntrantDroite{
     width: 40%;
     height: fill;
-    background-color: red;
-    border: 1px solid black;
+    background:url("/public/images/tasse-droite.png")no-repeat center center fixed;
+    background-size: 100%;
 }
+/* Mise en place écritures intro */
+#textePipeIntro{
+    color: blue;
+    position: absolute;
+    font-size: 150px;
+}
+#texteOuIntro{
+    color: white;
+    position: relative;
+    display: none;
+}
+#texteCafeIntro{
+    color: red;
+    position: relative;
+    font-size: 150px;
+    position: absolute;
+}
+/* Fin mise en place écritures intro */
