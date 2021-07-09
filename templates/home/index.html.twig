@@ -5,10 +5,9 @@
 {% block body %}
     <section id="containerIntro">
         <div id="blocEntrantGauche"></div>
-        <span id="textePipeIntro">La Pipe</span>
-        <span id="texteOuIntro">ou</span>
-        <span id="texteCafeIntro">Le Café</span>
+        <div id="textePipeIntro"><a href="{{path('laPipe')}}">La Pipe</a></div>
+        <div id="texteOuIntro">ou</div>
         <div id="blocEntrantDroite"></div>
+        <div id="texteCafeIntro"><a href="{{path('leCafe')}}">Le Café</a></div>
     </section>
-    
 {% endblock %}

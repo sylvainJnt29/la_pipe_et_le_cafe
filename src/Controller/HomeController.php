@@ -17,4 +17,24 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    /**
+     * @Route("/la-pipe", name="laPipe")
+     */
+    public function laPipe(): Response
+    {
+        return $this->render('home/laPipe.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    /**
+     * @Route("/le-cafe", name="leCafe")
+     */
+    public function leCafe(): Response
+    {
+        return $this->render('home/leCafe.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }

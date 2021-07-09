@@ -56,7 +56,8 @@ gsap.fromTo("#texteCafeIntro",{
 },{
     x:1300,
     y:700,
-    duration:3
+    duration:3,
     }
 );
 /* Fin animation ecritures intro */ 
+

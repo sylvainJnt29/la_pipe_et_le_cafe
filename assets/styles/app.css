@@ -3,34 +3,43 @@ body {
     font-size: 2em;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+a {
+    text-decoration: none;
 }
 #containerIntro{
     width: fill;
     height: 100vh;
     display: flex;
     place-content: space-between;
-    background:url("/public/images/tasse-centrale.png")no-repeat center center fixed;
+    background:url("/public/images/tasse-centrale.png")no-repeat center center ;
     background-size: 60%;
-    overflow-x: hidden;
 }
 #blocEntrantGauche{
     width: 40%;
     height: fill;
-    background:url("/public/images/pipe-gauche.png")no-repeat center center fixed;
+    background:url("/public/images/pipe-gauche.png")no-repeat center center ;
     background-size: 100%;
 }
 #blocEntrantDroite{
     width: 40%;
     height: fill;
-    background:url("/public/images/tasse-droite.png")no-repeat center center fixed;
+    background:url("/public/images/tasse-droite.png")no-repeat center center ;
     background-size: 100%;
 }
 /* Mise en place écritures intro */
 #textePipeIntro{
-    color: #3c2213;
     position: absolute;
     font-size: 150px;
     font-family: 'Dancing Script', cursive;
+    text-decoration: 1px black solid;
+}
+#textePipeIntro a{
+    color: #3c2213;
 }
 #texteOuIntro{
     color: white;
@@ -38,10 +47,22 @@ body {
     display: none;
 }
 #texteCafeIntro{
-    color: #aa7b4f;
-    position: relative;
-    font-size: 150px;
     position: absolute;
+    font-size: 150px;
     font-family: 'Festive', cursive;
+    text-decoration: 1px black solid;
+}
+#texteCafeIntro a{
+    color: #aa7b4f;
+}
+#textePipeIntro:hover a{
+    text-decoration: overline underline dotted whitesmoke;
+    transition: all 0.4s ease-in-out;
+}
+#texteCafeIntro:hover a{
+    text-decoration: overline underline wavy whitesmoke;
+    transition: all 0.4s ease-in-out;
 }
 /* Fin mise en place écritures intro */
+
+
