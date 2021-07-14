@@ -3,8 +3,10 @@ body {
     font-size: 2em;
     margin: 0;
     padding: 0;
+}
+html{
+    scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -17,19 +19,21 @@ a {
     display: flex;
     place-content: space-between;
     background:url("/public/images/tasse-centrale.png")no-repeat center center ;
-    background-size: 60%;
+    background-size: 50%;
 }
 #blocEntrantGauche{
     width: 40%;
     height: fill;
     background:url("/public/images/pipe-gauche.png")no-repeat center center ;
     background-size: 100%;
+    cursor: url("/public/images/testCurseur.png"),auto;
 }
 #blocEntrantDroite{
     width: 40%;
     height: fill;
     background:url("/public/images/tasse-droite.png")no-repeat center center ;
     background-size: 100%;
+    cursor: url("/public/images/testCurseur2.png"),auto;
 }
 /* Mise en place écritures intro */
 #textePipeIntro{
@@ -40,6 +44,7 @@ a {
 }
 #textePipeIntro a{
     color: #3c2213;
+    cursor: url("/public/images/testCurseur.png"),auto ;
 }
 #texteOuIntro{
     color: white;
@@ -54,6 +59,7 @@ a {
 }
 #texteCafeIntro a{
     color: #aa7b4f;
+    cursor: url("/public/images/testCurseur2.png"),auto;
 }
 #textePipeIntro:hover a{
     text-decoration: overline underline dotted whitesmoke;
@@ -65,4 +71,14 @@ a {
 }
 /* Fin mise en place écritures intro */
 
+/* Mise en place animation images intro */
+#blocEntrantGauche:hover{
+    background-image: url("/public/images/fond_gauche_intro.png");
+    background-size: cover;
+}
+#blocEntrantDroite:hover{
+    background-image: url("/public/images/fond_droite_intro.png");
+    background-size: cover;
+}
 
+/* Fin mise en place animation images intro */

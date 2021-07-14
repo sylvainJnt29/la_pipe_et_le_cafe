@@ -29,7 +29,7 @@ gsap.fromTo("#blocEntrantGauche",{
 gsap.fromTo("#blocEntrantDroite",{
     x:3000
 },{
-    x:-50,
+    x:0,
     duration:4
     }
 );
