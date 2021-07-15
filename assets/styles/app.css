@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background: linear-gradient(0.25turn, #aa7b4f, #ebf8e1, #3c2213);
     font-size: 2em;
     margin: 0;
     padding: 0;
@@ -10,8 +10,42 @@ html{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-a {
+#bodyPipe{
+    background: linear-gradient(0.25turn, #aa7b4f, #ebf8e1);
+    padding: 5%;
+    cursor: url("/public/images/curseurPipe.png"),auto;
+}
+#bodyPipe a{
+    cursor: url("/public/images/curseurPipe.png"),auto;
+}
+#bodyCafe{
+    background: linear-gradient(0.25turn,#ebf8e1, #3c2213);
+    padding: 5%;
+    cursor: url("/public/images/curseurCafe.png"),auto;
+}
+#bodyCafe a{
+    cursor: url("/public/images/curseurCafe.png"),auto;
+}
+footer{
+    border-top: 1px solid black;
+}
+/* footer ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+} */
+nav{
+    border-bottom: 1px solid black;
+}
+#navbar ul{
+    display:flex;
+    place-content: space-between;
+    list-style: none;
+}
+
+a{
     text-decoration: none;
+    color: black;
 }
 #containerIntro{
     width: fill;
@@ -26,14 +60,14 @@ a {
     height: fill;
     background:url("/public/images/pipe-gauche.png")no-repeat center center ;
     background-size: 100%;
-    cursor: url("/public/images/testCurseur.png"),auto;
+    cursor: url("/public/images/curseurPipe.png"),auto;
 }
 #blocEntrantDroite{
     width: 40%;
     height: fill;
     background:url("/public/images/tasse-droite.png")no-repeat center center ;
     background-size: 100%;
-    cursor: url("/public/images/testCurseur2.png"),auto;
+    cursor: url("/public/images/curseurCafe.png"),auto;
 }
 /* Mise en place écritures intro */
 #textePipeIntro{
@@ -43,8 +77,8 @@ a {
     text-decoration: 1px black solid;
 }
 #textePipeIntro a{
+    cursor: url("/public/images/curseurPipe.png"),auto;
     color: #3c2213;
-    cursor: url("/public/images/testCurseur.png"),auto ;
 }
 #texteOuIntro{
     color: white;
@@ -58,8 +92,8 @@ a {
     text-decoration: 1px black solid;
 }
 #texteCafeIntro a{
+    cursor: url("/public/images/curseurCafe.png"),auto;
     color: #aa7b4f;
-    cursor: url("/public/images/testCurseur2.png"),auto;
 }
 #textePipeIntro:hover a{
     text-decoration: overline underline dotted whitesmoke;
