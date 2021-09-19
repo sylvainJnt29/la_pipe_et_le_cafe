@@ -25,24 +25,18 @@ html{
 }
 #bodyCafe a{
     cursor: url("/public/images/curseurCafe.png"),auto;
+} 
+nav{
+    border-bottom: 1px solid black;
 }
 footer{
     border-top: 1px solid black;
 }
-/* footer ul{
-    display:flex;
-    justify-content: center;
-    list-style: none;
-} */
-nav{
-    border-bottom: 1px solid black;
-}
-#navbar ul{
+#navbar ul,footer ul{
     display:flex;
     place-content: space-between;
     list-style: none;
 }
-
 a{
     text-decoration: none;
     color: black;
