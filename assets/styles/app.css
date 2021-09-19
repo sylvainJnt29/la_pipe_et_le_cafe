@@ -26,17 +26,47 @@ html{
 #bodyCafe a{
     cursor: url("/public/images/curseurCafe.png"),auto;
 } 
+
 nav{
     border-bottom: 1px solid black;
+    padding-bottom: 2%;
+    display:flex;
+    /* place-content: space; */
+    justify-content: space-around;
+    list-style: none;
 }
 footer{
     border-top: 1px solid black;
-}
-#navbar ul,footer ul{
+    padding-top: 2%;
     display:flex;
-    place-content: space-between;
+    /* place-content: space; */
+    justify-content: space-around;
     list-style: none;
 }
+/* Progress bar */
+progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border: none;
+  background: transparent;
+}
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+  background-attachment: fixed;
+}
+/* Fin progress bar */
 a{
     text-decoration: none;
     color: black;
@@ -110,3 +140,4 @@ a{
 }
 
 /* Fin mise en place animation images intro */
+

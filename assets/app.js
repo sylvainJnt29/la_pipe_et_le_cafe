@@ -13,6 +13,8 @@ import './bootstrap';
 
 // Import de gsap (manuel après installation npm)
 import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin.js';
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
@@ -60,4 +62,12 @@ gsap.fromTo("#texteCafeIntro",{
     }
 );
 /* Fin animation ecritures intro */ 
+
+// progress bar
+gsap.registerPlugin(ScrollTrigger);
+gsap.to('progress', {
+  value: 100,
+  ease: 'none',
+  scrollTrigger: { scrub: 0.3 }
+});
 
