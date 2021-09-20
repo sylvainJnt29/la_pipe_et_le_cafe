@@ -37,4 +37,14 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    /**
+     * @Route("/en-cours-de-construction",name="enCours")
+     */
+    public function enCours(): Response
+    {
+        return $this->render('home/enCours.html.twig',[
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }

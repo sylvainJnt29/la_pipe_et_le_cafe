@@ -71,3 +71,11 @@ gsap.to('progress', {
   scrollTrigger: { scrub: 0.3 }
 });
 
+// animation de la grue construct
+gsap.fromTo("#grue",{
+    x:-1600
+},{
+    x:0,
+    duration:4
+    }
+);

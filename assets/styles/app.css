@@ -3,6 +3,7 @@ body {
     font-size: 2em;
     margin: 0;
     padding: 0;
+    width: auto;
 }
 html{
     scroll-behavior: smooth;
@@ -42,6 +43,17 @@ footer{
     /* place-content: space; */
     justify-content: space-around;
     list-style: none;
+}
+#bodyConstruct{
+    padding: 5%;
+    text-align: center;
+}
+#grue{
+    position: relative;
+    /* right: 1600px; */
+}
+#grue img{
+    width: 55%;
 }
 /* Progress bar */
 progress {

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue !{% endblock %}
+
+{% block body %}
+<div id="bodyConstruct">
+    {% include 'includes/navbar.html.twig' %}
+    <div id="grue">
+        <img src="{{asset('images/construction.png')}}">
+    </div>
+    {% include 'includes/footbar.html.twig' %}
+</div>
+{% endblock %}
