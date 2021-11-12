@@ -153,3 +153,29 @@ a{
 
 /* Fin mise en place animation images intro */
 
+/* Début responsive */
+@media (max-width: 990px){
+/* body{
+    background-color: pink;
+} */
+/* #containerIntro{
+    background-color: red;
+}
+#blocEntrantGauche{
+    background-color: blue;
+}
+#blocEntrantDroite{
+    background-color: green;
+} */
+#textePipeIntro{
+    position: fixed;
+}
+#texteCafeIntro{
+    position: fixed;
+
+}
+
+}
+
+/* Fin responsive */
+
