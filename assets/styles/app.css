@@ -1,9 +1,11 @@
 body {
     background: linear-gradient(0.25turn, #aa7b4f, #ebf8e1, #3c2213);
     font-size: 2em;
-    margin: 0;
-    padding: 0;
-    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* padding: 2%; */
+    /* width: auto; */
+
 }
 html{
     scroll-behavior: smooth;
@@ -11,41 +13,38 @@ html{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-#bodyPipe{
-    background: linear-gradient(0.25turn, #aa7b4f, #ebf8e1);
-    padding: 5%;
+ #bodyPipe a, #bodyPipe {
     cursor: url("/public/images/curseurPipe.png"),auto;
-}
-#bodyPipe a{
-    cursor: url("/public/images/curseurPipe.png"),auto;
-}
-#bodyCafe{
-    background: linear-gradient(0.25turn,#ebf8e1, #3c2213);
-    padding: 5%;
-    cursor: url("/public/images/curseurCafe.png"),auto;
-}
-#bodyCafe a{
-    cursor: url("/public/images/curseurCafe.png"),auto;
 } 
+#bodyCafe a,#bodyCafe{
+    cursor: url("/public/images/curseurCafe.png"),auto;
+}  
 
 nav{
     border-bottom: 1px solid black;
-    padding-bottom: 2%;
+    padding: 2%;
     display:flex;
-    /* place-content: space; */
     justify-content: space-around;
     list-style: none;
 }
+nav a:after,footer a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #a17e3d;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+nav a:hover:after, footer a:hover:after { transform: scaleX(1); }
+nav a.fromRight:after, footer a.fromRight:after{ transform-origin:100% 50%; }
+nav a.fromLeft:after, footer a.fromLeft:after{  transform-origin:  0% 50%; }
 footer{
     border-top: 1px solid black;
-    padding-top: 2%;
+    padding: 2%;
     display:flex;
-    /* place-content: space; */
     justify-content: space-around;
     list-style: none;
 }
 #bodyConstruct{
-    padding: 5%;
     text-align: center;
 }
 #grue{
@@ -53,7 +52,7 @@ footer{
     /* right: 1600px; */
 }
 #grue img{
-    width: 55%;
+    width: 70%;
 }
 /* Progress bar */
 progress {
@@ -144,11 +143,11 @@ a{
 /* Mise en place animation images intro */
 #blocEntrantGauche:hover{
     background-image: url("/public/images/fond_gauche_intro.png");
-    background-size: cover;
+    /* background-size: cover; */
 }
 #blocEntrantDroite:hover{
     background-image: url("/public/images/fond_droite_intro.png");
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 /* Fin mise en place animation images intro */
@@ -169,12 +168,10 @@ a{
 } */
 #textePipeIntro{
     position: fixed;
-}
+    }
 #texteCafeIntro{
     position: fixed;
-
-}
-
+    }
 }
 
 /* Fin responsive */

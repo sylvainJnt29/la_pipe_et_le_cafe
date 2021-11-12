@@ -53,10 +53,10 @@ gsap.fromTo("#texteOuIntro",{
     }
 );
 gsap.fromTo("#texteCafeIntro",{
-    x:0,
+    x:-1000,
     y:2000
 },{
-    x:1300,
+    x:1000,
     y:700,
     duration:3,
     }
