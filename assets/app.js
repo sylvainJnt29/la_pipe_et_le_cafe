@@ -14,9 +14,7 @@ import './bootstrap';
 // Import de gsap (manuel après installation npm)
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin.js';
-import { PixiPlugin } from "gsap/PixiPlugin.js";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
+
 
 
 // Test de fonctionnement gsap
@@ -79,3 +77,10 @@ gsap.fromTo("#grue",{
     duration:4
     }
 );
+
+// Animations articles page Pipe + Café
+
+
+
+
+// Fin animations articles page Pipe + Café

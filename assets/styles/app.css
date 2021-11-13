@@ -149,8 +149,35 @@ a{
     background-image: url("/public/images/fond_droite_intro.png");
     /* background-size: cover; */
 }
-
 /* Fin mise en place animation images intro */
+
+
+ 
+/* Début animations articles page Pipe + Café */
+
+#test{
+    border: 0.2em solid #01b3e3;
+    margin-left: 45%;
+    padding: 5%;
+}
+#test2{
+    border: 0.2em solid #db38b5;
+    margin: 5%;
+    padding: 5%;
+}
+#test3{
+    border: 0.2em solid #ff6b01;
+    margin-right: 45%;
+    padding: 5%;
+}
+
+
+
+/* Fin animations articles page Pipe + Café */
+
+
+
+
 
 /* Début responsive */
 @media (max-width: 990px){
