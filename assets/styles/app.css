@@ -159,16 +159,19 @@ a{
     border: 0.2em solid #01b3e3;
     margin-left: 45%;
     padding: 5%;
+    position: relative;
 }
 #test2{
     border: 0.2em solid #db38b5;
     margin: 5%;
     padding: 5%;
+    position: relative;
 }
 #test3{
     border: 0.2em solid #ff6b01;
     margin-right: 45%;
     padding: 5%;
+    position: relative;
 }
 
 
